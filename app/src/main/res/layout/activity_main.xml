@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textCell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10pt"
+            android:text="0 Cells" />
+
+        <TextView
+            android:id="@+id/textTreasure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10pt"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:text="0 Treasures" />
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridView1"
+        android:numColumns="5"
+        android:gravity="center"
+        android:padding="5dp"
+        android:columnWidth="50dp"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:background="@android:color/holo_blue_light"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="5dp"
+        >
+
+    </GridView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textSize="24sp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:onClick="reset"
+            android:text="Reset" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/button"
+            android:layout_toEndOf="@+id/button"
+            android:onClick="quit"
+            android:text="Quit" />
+
+    </LinearLayout>
+</LinearLayout>
